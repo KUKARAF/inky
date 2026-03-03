@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Explain Selection...</name>
+    <id>com.inky.explain</id>
+    <param name="tab" type="notebook">
+        <page name="options" gui-text="Options">
+            <param name="model" type="optiongroup" appearance="combo" gui-text="Model:">
+                <option value="claude-sonnet-4-5-20250929">Sonnet 4.5 (Fast)</option>
+                <option value="claude-opus-4-6">Opus 4.6 (Powerful)</option>
+            </param>
+        </page>
+    </param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Claude AI"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">inky/extensions/explain.py</command>
+    </script>
+</inkscape-extension>

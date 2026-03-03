@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+.venv/
+
+# Vendored dependencies (installed by install.sh)
+src/inky/_vendor/
+
+# uv
+.python-version
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Auth tokens
+tokens.json
+api_key
+
+# Chrome extension reference (not part of the project)
+Claude-Chrome-Web-Store/
